@@ -1,0 +1,14 @@
+:root {
+  --blue-950:#062a63; --blue-900:#073b86; --blue-800:#0754b8; --blue-700:#0969da; --blue-100:#eaf3ff; --blue-50:#f4f8ff;
+  --ink:#172033; --muted:#5d687b; --line:#d8e0eb; --surface:#fff; --canvas:#f6f8fb;
+  --green-800:#17613d; --green-100:#e6f5ec; --amber-800:#805500; --amber-100:#fff4d6; --red-800:#9b2935; --red-100:#fdebed;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  --text-sm:.875rem; --text-base:1rem; --text-lg:1.125rem; --text-xl:1.5rem; --text-2xl:2rem; --text-3xl:2.7rem;
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.5rem; --space-6:2rem; --space-7:3rem; --space-8:4rem;
+  --radius-sm:.35rem; --radius-md:.65rem; --radius-lg:1rem; --shadow:0 .5rem 1.5rem rgba(27,46,78,.08); --max:90rem;
+  --control:2.9rem; --header:4.5rem;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--canvas);color:var(--ink);font:400 var(--text-base)/1.55 var(--font)}
+button,input,select,textarea{font:inherit} button,a{touch-action:manipulation} a{color:var(--blue-800)} img{max-width:100%} h1,h2,h3,p{margin-top:0} h1{font-size:var(--text-2xl);line-height:1.18} h2{font-size:var(--text-xl);line-height:1.25} h3{font-size:var(--text-lg)}
+:focus-visible{outline:.2rem solid #ffbf47;outline-offset:.18rem}.skip-link{position:fixed;left:var(--space-3);top:-6rem;background:#fff;padding:var(--space-3);z-index:100}.skip-link:focus{top:var(--space-3)}
+.wrap{width:min(calc(100% - var(--space-6)),var(--max));margin-inline:auto}.fallback{max-width:40rem;margin:10vh auto;padding:var(--space-6)}
