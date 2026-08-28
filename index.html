@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent hackathon prototype for a guided learner's licence journey.">
+  <title>Saathi — Learner's Licence Guide</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/states.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="demo-banner"></div>
+  <header class="site-header">
+    <div class="header-main wrap">
+      <a class="brand" href="#/welcome" aria-label="Saathi home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span><strong>Saathi</strong><small>Learner's Licence Guide</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="text-button" id="language-button" type="button" aria-label="Change language">Aあ English</button>
+        <button class="text-button" id="help-button" type="button">Help</button>
+      </div>
+    </div>
+    <nav class="service-nav" aria-label="Service navigation">
+      <div class="wrap"><a href="#/dashboard">My application</a><a href="#/roadmap">Journey</a><a href="#/documents">Documents</a><a href="#/payment">Fee payment</a></div>
+    </nav>
+  </header>
+  <div id="network-status" class="network-status" role="status" aria-live="polite" hidden></div>
+  <main id="main-content" tabindex="-1"></main>
+  <footer class="site-footer"><div class="wrap"><span>Independent prototype · No government affiliation</span><button class="link-button" id="reset-button" type="button">Reset demo</button></div></footer>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title">
+    <button class="dialog-close" type="button" aria-label="Close help">×</button>
+    <h2 id="help-title">Need help?</h2>
+    <p>Your progress is saved on this device. For this demo, call <strong>1800-000-0000</strong> or return to your application roadmap.</p>
+    <a class="button button-primary" href="#/roadmap">View my journey</a>
+  </dialog>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
